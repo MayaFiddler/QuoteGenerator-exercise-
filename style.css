@@ -1,0 +1,97 @@
+:root {
+    --main-color: #FFAE03 ;
+    --secondary-color: #415d43;
+    --background-color: #eeebd0;
+    --extra-color: #E9190F;
+    --second-extra-color: #1f7a8c;
+    --font-color: #daddd8;
+    --padding-size: 1rem;
+    --font-heading: "Playwrite HR Lijeva", cursive;
+    --font-body: "Playwrite HR Lijeva", cursive;
+    --font-size: 1.5rem;
+  }
+
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-body);
+    font-size: var(--font-size);
+    height: 100vh;
+    margin: 0;
+    background-color: var(--background-color);
+    color: black;
+ 
+}
+
+h1 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--font-color);
+    margin-bottom: var(--padding-size);
+    position: sticky;
+    margin: 10px, 0;
+    padding: 10px;
+    flex-shrink: 0;
+    opacity: 0;
+    animation: fadeIn 3s ease-in forwards;
+}
+
+@keyframes fadeIn {
+   
+    to {
+      opacity: 1; 
+    }
+  }
+
+
+.container{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 70vw;
+    height: 70vh;
+    border: 2px solid var(--extra-color);
+    justify-content: space-evenly;
+    background-color: var(--secondary-color);
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 1rem; 
+    box-shadow: gray 0px 0px 20px 0px;
+    transition: all 0.3s ease-in-out;
+}
+
+#quote{
+    text-align: center;
+    flex-grow: 0;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: var(--font-color);
+    font-size: 1.5rem;
+         
+}
+
+#author{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-style: italic;
+    flex-shrink: 2;
+    color: white
+}
+
+#generate-quote{
+    background-color: var(--second-extra-color);
+    color: var(--font-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: gray 0px 0px 20px 0px;
+}

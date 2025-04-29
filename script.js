@@ -1,3 +1,5 @@
+//quotes collected by AI and me
+
 const quotes = [
         { quote: "The unexamined life is not worth living.", author: "Socrates" },
         { quote: "The first and best victory is to conquer self.", author: "Plato" },
@@ -68,7 +70,7 @@ const authorContainer = document.getElementById("author");
 // function to generate a random quote
 function getRandomQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
-    quoteContainer.textContent = quotes[randomIndex].quote;
+    quoteContainer.textContent = `\" ${quotes[randomIndex].quote} \" `;
     authorContainer.textContent = quotes[randomIndex].author;
 }
 
